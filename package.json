@@ -5,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.15.4",
-    "nodejs": "^0.0.0"
+    "mongodb": "^2.2.31",
+    "nodejs": "^0.0.0",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {},
   "scripts": {
