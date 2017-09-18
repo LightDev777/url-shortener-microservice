@@ -10,9 +10,9 @@
 <code>https://short-url-serv.herokuapp.com/new/https://www.google.com</code><br>
 <code>https://short-url-serv.herokuapp.com/new/http://foo.com:80</code><br>
 <h2>Example creation output</h2>
-<code>{ "original_url":"http://foo.com:80", "short_url":"https://short-url-serv.herokuapp.com/8170" }</code>
+<code>{ "original_url":"https://www.google.com", "short_url":"https://short-url-serv.herokuapp.com/W29S0" }</code>
 <h2>Usage:</h2>
-<code>https://short-url-serv.herokuapp.com/2871</code>
+<code>https://short-url-serv.herokuapp.com/W29S0</code>
 <h2>Will redirect to:</h2>
 <code>https://www.google.com/</code>
 
