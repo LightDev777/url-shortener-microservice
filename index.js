@@ -6,6 +6,7 @@ var validUrl = require('valid-url');
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var fs = require('fs');
+var aws = require('aws-sdk');
 
 
 var dbUrl = process.env.PROD_MONGODB;//'mongodb://localhost/urldb';
@@ -41,7 +42,7 @@ http.createServer(function(req, res) {
                    combinationArray[Math.floor((Math.random()*35) +1)] +
                    indexCount;
 
-    dataJson.short_url = 'localhost:5000/' + urlCode;
+    dataJson.short_url = 'https://short-url-serv.herokuapp.com' + urlCode;
 
 
      var pathData = data.pathname;
@@ -98,7 +99,7 @@ http.createServer(function(req, res) {
   }
 
   function findUrlCode(p) {
-    db.collection("urls").find({"short_url":"localhost:5000" + p}).toArray(function(err, result) {
+    db.collection("urls").find({"short_url":"https://short-url-serv.herokuapp.com" + p}).toArray(function(err, result) {
       if(err) throw err;
       redirectUrl = result;
       db.close();
