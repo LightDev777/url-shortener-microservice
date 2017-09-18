@@ -6,11 +6,10 @@ var validUrl = require('valid-url');
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var fs = require('fs');
-var aws = require('aws-sdk');
 
 
 var dbUrl = process.env.PROD_MONGODB;//'mongodb://localhost/urldb';
-var baseHost = "localhost:5000";//"https://short-url-serv.herokuapp.com";
+var baseHost = "https://short-url-serv.herokuapp.com";
 console.log(dbUrl);
 
 
