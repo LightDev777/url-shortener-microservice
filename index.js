@@ -8,7 +8,8 @@ var assert = require('assert');
 var fs = require('fs');
 
 
-var dbUrl = 'mongodb://localhost/urldb';
+var dbUrl = process.env.PROD_MONGODB;//'mongodb://localhost/urldb';
+console.log(dbUrl);
 
 
 var combinationArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
