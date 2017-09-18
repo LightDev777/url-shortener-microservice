@@ -10,7 +10,7 @@ var aws = require('aws-sdk');
 
 
 var dbUrl = process.env.PROD_MONGODB;//'mongodb://localhost/urldb';
-var baseHost = "https://short-url-serv.herokuapp.com";
+var baseHost = "localhost:5000";//"https://short-url-serv.herokuapp.com";
 console.log(dbUrl);
 
 
