@@ -42,7 +42,7 @@ http.createServer(function(req, res) {
                    combinationArray[Math.floor((Math.random()*35) +1)] +
                    indexCount;
 
-    dataJson.short_url = "https://short-url-serv.herokuapp.com" + urlCode;
+    dataJson.short_url = "https://short-url-serv.herokuapp.com/" + urlCode;
 
 
      var pathData = data.pathname;
